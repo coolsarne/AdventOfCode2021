@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea481e97-0e7c-455b-b092-bb3da6106f40" name="Changes" comment="Completed day 2: Dive">
-      <change afterPath="$PROJECT_DIR$/Day_3/resources/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_3/src/Main_3_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_3/src/Main_3_2.java" afterDir="false" />
+    <list default="true" id="ea481e97-0e7c-455b-b092-bb3da6106f40" name="Changes" comment="Completed day 3: Binary Diagnostic">
+      <change afterPath="$PROJECT_DIR$/Day_4/resources/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_4/src/Main_4_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_4/src/Main_4_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,29 +40,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../School/KDG/2e_jaar/Programmeren 2 - IAO-ISM/groeiproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Angular Template" />
   </component>
-  <component name="RunManager" selected="Application.Main_3_2">
-    <configuration name="Main_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_1" />
-      <module name="Day_1" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_2" />
-      <module name="Day_1" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main_4_2">
     <configuration name="Main_3" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -113,6 +97,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main_4_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main_4_1" />
+      <module name="Day_4" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_4_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main_4_2" />
+      <module name="Day_4" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -124,19 +128,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main_3" />
-      <item itemvalue="Application.Main_1" />
-      <item itemvalue="Application.Main_2" />
       <item itemvalue="Application.Main_4" />
       <item itemvalue="Application.Main_3_1" />
       <item itemvalue="Application.Main_3_2" />
+      <item itemvalue="Application.Main_4_1" />
+      <item itemvalue="Application.Main_4_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main_4_2" />
+        <item itemvalue="Application.Main_4_1" />
         <item itemvalue="Application.Main_3_2" />
         <item itemvalue="Application.Main_3_1" />
         <item itemvalue="Application.Main_4" />
-        <item itemvalue="Application.Main_4" />
-        <item itemvalue="Application.Main_2" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +157,14 @@
       <workItem from="1638483728872" duration="147000" />
       <workItem from="1638508944289" duration="2024000" />
       <workItem from="1638525910707" duration="5000" />
-      <workItem from="1638537489858" duration="5371000" />
+      <workItem from="1638537489858" duration="6020000" />
+      <workItem from="1638627101650" duration="5585000" />
+      <workItem from="1638661118798" duration="4118000" />
+      <workItem from="1638874073839" duration="2602000" />
+      <workItem from="1638885298425" duration="1755000" />
+      <workItem from="1638892406980" duration="1301000" />
+      <workItem from="1638902645389" duration="1135000" />
+      <workItem from="1638910439959" duration="4601000" />
     </task>
     <task id="LOCAL-00001" summary="Completed day 2: Dive">
       <created>1638434393612</created>
@@ -162,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638434393612</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed day 3: Binary Diagnostic">
+      <created>1638542957118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638542957118</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed day 2: Dive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 2: Dive" />
+    <MESSAGE value="Completed day 3: Binary Diagnostic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 3: Binary Diagnostic" />
   </component>
 </project>
