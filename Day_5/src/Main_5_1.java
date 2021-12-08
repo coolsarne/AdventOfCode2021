@@ -27,20 +27,6 @@ public class Main_5_1 {
             toY.add(Integer.parseInt(line.split(",")[2]));
         }
 
-        //Removing diagonal lines
-        for (int i = 0; i < length; i++) {
-            if (!fromX.get(i).equals(toX.get(i)) && !fromY.get(i).equals(toY.get(i))) {
-                fromX.set(i, -1);
-                fromY.set(i, -1);
-                toX.set(i, -1);
-                toY.set(i, -1);
-            }
-        }
-        fromX.removeIf(i -> Objects.equals(i, -1));
-        fromY.removeIf(i -> Objects.equals(i, -1));
-        toX.removeIf(i -> Objects.equals(i, -1));
-        toY.removeIf(i -> Objects.equals(i, -1));
-
         //generate diagram
         int maxX = 0;
         int maxY = 0;
@@ -48,27 +34,23 @@ public class Main_5_1 {
         maxY = Collections.max(fromY) > Collections.max(toY) ? Collections.max(fromY) : Collections.max(toY);
 
         diagram = new int[++maxY][++maxX];
-        for (Integer integer : fromX) { //draw horizontal lines
-            if (!integer.equals(toX.get(fromX.indexOf(integer)))) {
+        for (Integer integer : fromX) {
+            if (!integer.equals(toX.get(fromX.indexOf(integer))) && fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer)))) { //draw horizontal lines
                 int steps = integer < toX.get(fromX.indexOf(integer)) ? 1 : -1;
                 int xposToIncrement = integer;
                 while (xposToIncrement != (toX.get(fromX.indexOf(integer)) + steps)) {
                     diagram[fromY.get(fromX.indexOf(integer))][xposToIncrement]++;
                     xposToIncrement += steps;
                 }
-            }
-            fromX.set(fromX.indexOf(integer), -2); //makes sure that indexOf method will never encounter duplicate integer values
-        }
-        for (Integer integer : fromY) { //draw vertical lines
-            if (!integer.equals(toY.get(fromY.indexOf(integer)))) {
-                int steps = integer < toY.get(fromY.indexOf(integer)) ? 1 : -1;
-                int yposToIncrement = integer;
-                while (yposToIncrement != (toY.get(fromY.indexOf(integer)) + steps)){
-                    diagram[yposToIncrement][toX.get(fromY.indexOf(integer))]++;
+            } else if (!fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer))) && integer.equals(toX.get(fromX.indexOf(integer)))) { //draw vertical lines
+                int steps = fromY.get(fromX.indexOf(integer)) < toY.get(fromX.indexOf(integer)) ? 1 : -1;
+                int yposToIncrement = fromY.get(fromX.indexOf(integer));
+                while (yposToIncrement != (toY.get(fromX.indexOf(integer)) + steps)) {
+                    diagram[yposToIncrement][toX.get(fromX.indexOf(integer))]++;
                     yposToIncrement += steps;
                 }
             }
-            fromY.set(fromY.indexOf(integer), -2); //makes sure that indexOf method will never encounter duplicate integer values
+            fromX.set(fromX.indexOf(integer), null); //makes sure that indexOf method will never encounter duplicate integer values
         }
 
         //check #overlapping lines

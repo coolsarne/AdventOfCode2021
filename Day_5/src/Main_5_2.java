@@ -38,43 +38,33 @@ public class Main_5_2 {
 
         diagram = new int[++maxY][++maxX];
 
-        List<Integer> tempFromX = new LinkedList<>(fromX);
-        for (Integer integer : tempFromX) { //draw horizontal lines
-            if (!integer.equals(toX.get(tempFromX.indexOf(integer))) && fromY.get(tempFromX.indexOf(integer)).equals(toY.get(tempFromX.indexOf(integer)))) {
-                int steps = integer < toX.get(tempFromX.indexOf(integer)) ? 1 : -1;
+        for (Integer integer : fromX) {
+            if (!integer.equals(toX.get(fromX.indexOf(integer))) && fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer)))) { //draw horizontal lines
+                int steps = integer < toX.get(fromX.indexOf(integer)) ? 1 : -1;
                 int xposToIncrement = integer;
-                while (xposToIncrement != (toX.get(tempFromX.indexOf(integer)) + steps)) {
-                    diagram[fromY.get(tempFromX.indexOf(integer))][xposToIncrement]++;
+                while (xposToIncrement != (toX.get(fromX.indexOf(integer)) + steps)) {
+                    diagram[fromY.get(fromX.indexOf(integer))][xposToIncrement]++;
                     xposToIncrement += steps;
                 }
-            }
-            tempFromX.set(tempFromX.indexOf(integer), -2); //makes sure that indexOf method will never encounter duplicate integer values
-        }
-        List<Integer> tempFromY = new LinkedList<>(fromY);
-        for (Integer integer : tempFromY) { //draw vertical lines
-            if (!integer.equals(toY.get(tempFromY.indexOf(integer))) && fromX.get(tempFromY.indexOf(integer)).equals(toX.get(tempFromY.indexOf(integer)))) {
-                int steps = integer < toY.get(tempFromY.indexOf(integer)) ? 1 : -1;
-                int yposToIncrement = integer;
-                while (yposToIncrement != (toY.get(tempFromY.indexOf(integer)) + steps)){
-                    diagram[yposToIncrement][toX.get(tempFromY.indexOf(integer))]++;
+            } else if (!fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer))) && integer.equals(toX.get(fromX.indexOf(integer)))) { //draw vertical lines
+                int steps = fromY.get(fromX.indexOf(integer)) < toY.get(fromX.indexOf(integer)) ? 1 : -1;
+                int yposToIncrement = fromY.get(fromX.indexOf(integer));
+                while (yposToIncrement != (toY.get(fromX.indexOf(integer)) + steps)) {
+                    diagram[yposToIncrement][toX.get(fromX.indexOf(integer))]++;
                     yposToIncrement += steps;
                 }
-            }
-            tempFromY.set(tempFromY.indexOf(integer), -2); //makes sure that indexOf method will never encounter duplicate integer values
-        }
-        for (Integer integer : fromX) { //draw diagonal lines
-            if (!integer.equals(toX.get(fromX.indexOf(integer))) && !fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer)))){
+            } else if (!integer.equals(toX.get(fromX.indexOf(integer))) && !fromY.get(fromX.indexOf(integer)).equals(toY.get(fromX.indexOf(integer)))) { //draw diagonal lines
                 int xSteps = integer < toX.get(fromX.indexOf(integer)) ? 1 : -1;
                 int ySteps = fromY.get(fromX.indexOf(integer)) < toY.get(fromX.indexOf(integer)) ? 1 : -1;
                 int xPosToIncrement = integer;
                 int yposToIncrement = fromY.get(fromX.indexOf(integer));
-                while (xPosToIncrement != (toX.get(fromX.indexOf(integer)) + xSteps)){
+                while (xPosToIncrement != (toX.get(fromX.indexOf(integer)) + xSteps)) {
                     diagram[yposToIncrement][xPosToIncrement]++;
                     xPosToIncrement += xSteps;
                     yposToIncrement += ySteps;
                 }
             }
-            fromX.set(fromX.indexOf(integer), -2); //makes sure that indexOf method will never encounter duplicate integer values
+            fromX.set(fromX.indexOf(integer), null); //makes sure that indexOf method will never encounter duplicate integer values
         }
 
         //check #overlapping lines
