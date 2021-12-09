@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea481e97-0e7c-455b-b092-bb3da6106f40" name="Changes" comment="Completed day 6: Lanternfish">
-      <change afterPath="$PROJECT_DIR$/Day_7/resources/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_7/src/Main_7_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Day_7/src/Main_7_2.java" afterDir="false" />
+    <list default="true" id="ea481e97-0e7c-455b-b092-bb3da6106f40" name="Changes" comment="Completed day 7: The Treachery of Whales">
+      <change afterPath="$PROJECT_DIR$/Day_8/resources/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_8/src/Main_8_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Day_8/src/Main_8_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,32 +46,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Angular Template" />
   </component>
-  <component name="RunManager" selected="Application.Main_7_2">
+  <component name="RunManager" selected="Application.Main_8_2">
     <configuration name="Main_3" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main_3" />
       <module name="Day_2" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_5_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main_5_2" />
-      <module name="Day_5" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_6_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main_6_1" />
-      <module name="Day_6" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,6 +87,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main_8_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main_8_1" />
+      <module name="Day_8" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main_8_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main_8_2" />
+      <module name="Day_8" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -118,19 +118,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main_3" />
-      <item itemvalue="Application.Main_5_2" />
-      <item itemvalue="Application.Main_6_1" />
       <item itemvalue="Application.Main_6_2" />
       <item itemvalue="Application.Main_7_1" />
       <item itemvalue="Application.Main_7_2" />
+      <item itemvalue="Application.Main_8_1" />
+      <item itemvalue="Application.Main_8_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main_8_2" />
+        <item itemvalue="Application.Main_8_1" />
         <item itemvalue="Application.Main_7_2" />
         <item itemvalue="Application.Main_7_1" />
         <item itemvalue="Application.Main_6_2" />
-        <item itemvalue="Application.Main_6_1" />
-        <item itemvalue="Application.Main_5_2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,8 @@
       <workItem from="1638892406980" duration="1301000" />
       <workItem from="1638902645389" duration="1135000" />
       <workItem from="1638910439959" duration="12329000" />
-      <workItem from="1638963625351" duration="18926000" />
+      <workItem from="1638963625351" duration="25038000" />
+      <workItem from="1639052613948" duration="6978000" />
     </task>
     <task id="LOCAL-00001" summary="Completed day 2: Dive">
       <created>1638434393612</created>
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638988326698</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Completed day 7: The Treachery of Whales">
+      <created>1638993166091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638993166091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +232,7 @@
     <MESSAGE value="Completed day 5: Hydrothermal Venture" />
     <MESSAGE value="Optimized day 5: Hydrothermal Venture" />
     <MESSAGE value="Completed day 6: Lanternfish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed day 6: Lanternfish" />
+    <MESSAGE value="Completed day 7: The Treachery of Whales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed day 7: The Treachery of Whales" />
   </component>
 </project>
